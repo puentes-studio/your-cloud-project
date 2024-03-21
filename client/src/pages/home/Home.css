@@ -1,0 +1,103 @@
+.home {
+    font-family: 'Genos', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    animation: changeBackground 500s infinite; /* Change s to the desired duration of each background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  @keyframes changeBackground {
+    0%, 100% {
+      background-image: url('src/assets/bg/bg_01.png');
+    }
+    15% {
+      background-image: url('src/assets/bg/bg_02.png');
+    }
+    30% {
+      background-image: url('src/assets/bg/bg_03.png');
+    }
+    50% {
+      background-image: url('src/assets/bg/bg_04.png');
+    }
+    75% {
+      background-image: url('src/assets/bg/bg_05.png');
+    }
+    80% {
+      background-image: url('src/assets/bg/bg_06.png');
+    }
+  }
+  
+
+
+  .logo-container {
+    margin-top: 350px;
+    margin-bottom: 15%;
+  }
+  
+  .logotype {
+    height: 6em;
+    border-radius: 10px;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logotype:hover {
+    filter: drop-shadow(0 0 2em #868686aa);
+  }
+  
+  
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .upload-and-save {
+    color: #ecf5ec;
+    font-weight: 200;
+    font-size: 18px;
+  }
+  
+  .btn-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  
+  .btn-primary {
+    display: flex;
+    border-radius: 50px;
+    height: 50px;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .login-btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  .login-btn:hover {
+    background-color: rgb(11, 250, 78);
+    color: rgb(0, 0, 0);
+  }
+  
+  .register-btn {
+    border: 1px solid rgb(35, 249, 213);;
+    background-color: #292929;
+    color: rgb(35, 249, 213);
+    margin-top: 20px;
+  }
+  
+  .register-btn:hover {
+    background-color: rgb(35, 249, 213);
+    color: rgb(0, 0, 0);
+ 
+  }

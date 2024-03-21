@@ -1,0 +1,43 @@
+.register {
+    font-family: 'Genos', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100vh; */
+    height: 100%;
+    background-color: rgb(241, 241, 241);
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30%;
+}
+
+
+.register-btn2 {
+    font-family: 'Genos', sans-serif;
+    border-radius: 50px;
+    height: 50px;
+    width: 280px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #292929;
+    color: white;
+    margin-top: .7rem;
+}
+
+.register-btn2:hover {
+    background-color: rgb(1, 255, 247);
+    color: rgb(7, 7, 7);
+}
+
+.recover-password-link {
+    font-size: 10px;
+    text-decoration: none;
+    color: blue;
+}

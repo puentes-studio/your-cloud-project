@@ -1,0 +1,88 @@
+.file-gallery-container {
+  margin: 20px;
+    width: 90%;
+    height: 60%;
+}
+
+.folder-name {
+  font-size: 1.3em;
+}
+
+.goback-container {
+  display: flex;
+  margin-left: 10%;
+  margin-top: -40px;
+}
+
+.goBackButton {
+  color: white;
+  background: #f300a8;
+  padding: 6px 6px 6px 6px;
+  border-radius: 50%;
+}
+
+.container {
+  max-width: 800px; /* Set the maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); /* Create columns with a width of 150px */
+  grid-auto-rows: 70px; /* Set the height of each row to 150px */
+  grid-gap: 10px;
+  margin-top: 50px;
+}
+
+
+
+.file-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.icon-height {
+  height: 20px 
+}
+
+.delete-icon {
+  margin-top: -12px;
+  margin-left: 28px;
+  color: red;
+  height: 14px;
+}
+
+.file-name {
+font-size: 11px;
+text-decoration: none;
+color: rgb(34, 34, 34);
+display: inline-block; /* Ensure the text is displayed as a block element */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for truncated text */
+  max-width: 60px; 
+}
+
+p.folder-name {
+  font-size: 11px;
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  margin: 0;
+  display: inline-block; /* Ensure the text is displayed as a block element */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for truncated text */
+  max-width: 60px; 
+}
+
+/* .file-item {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.file-item img {
+  width: 100%;
+  height: auto;
+} */
+

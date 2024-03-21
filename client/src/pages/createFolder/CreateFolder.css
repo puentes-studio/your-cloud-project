@@ -1,0 +1,51 @@
+.create-folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-folder { 
+    margin-top: 40px;
+    color: #343234;
+    font-size: 18px;
+    margin-bottom: 20px
+}
+
+.folder-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+}
+
+
+.create-folder-btn {
+    font-family: 'Genos', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    height: 50px;
+    width: 185px;
+    border-radius: 50px;
+    margin-top: .7rem;
+  }
+  
+  .back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(237, 237, 237);
+    text-transform: uppercase;
+    border-radius: 50px;
+    height: 50px;
+    width: 154px;
+    background-color: black;
+    margin-top: -51px;
+    font-size: 18px;
+    margin-left: 217px;
+  }
