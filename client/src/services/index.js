@@ -1,5 +1,4 @@
 export const registerUserService = async ({ user_name, email, password }) => {
-  console.log(import.meta.env.VITE_URL_API);
   const response = await fetch(`${import.meta.env.VITE_URL_API}/users`, {
     method: 'POST',
     headers: {
@@ -16,7 +15,6 @@ export const registerUserService = async ({ user_name, email, password }) => {
 };
 
 export const loginUserService = async ({ email, password }) => {
-  console.log(email, password);
   const response = await fetch(`${import.meta.env.VITE_URL_API}/login`, {
     method: 'POST',
     headers: {
@@ -25,7 +23,6 @@ export const loginUserService = async ({ email, password }) => {
     body: JSON.stringify({ email, password }),
   });
 
-  console.log(response);
   const json = await response.json();
 
   if (!response.ok) {

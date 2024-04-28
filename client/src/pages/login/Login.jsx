@@ -18,8 +18,7 @@ const Login = () => {
 
     const handleForm = async (e) => {
         e.preventDefault();
-        setError("");
-console.log(email, password);
+        setError('');
         try {
             const data = await loginUserService({email, password})
 
