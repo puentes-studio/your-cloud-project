@@ -9,7 +9,7 @@ import {
   newUserController,
   getUserController,
   loginController,
-} from "../controllers/users.js"; //Importamos controladores de users.js
+} from "./controllers/users.js"; //Importamos controladores de users.js
 
 import {
   getFilesController,
