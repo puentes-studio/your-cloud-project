@@ -59,7 +59,7 @@ const crearUsuario = async (user_name, email, password) => {
 
   const userId = newUser[0].insertId;
   const uploadsFolder = "uploads";
-  const userFolder = path.join(process.cwd() ,uploadsFolder, String(userId));
+  const userFolder = path.join(process.cwd(), uploadsFolder, String(userId));
 
   try {
     await fs.mkdir(userFolder);

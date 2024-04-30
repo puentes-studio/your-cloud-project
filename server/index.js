@@ -9,23 +9,23 @@ import {
   newUserController,
   getUserController,
   loginController,
-} from "../controllers/users.js"; //Importamos controladores de users.js
+} from "./controllers/users.js"; //Importamos controladores de users.js
 
 import {
   getFilesController,
   newFileController,
   getSingleFileController,
   deleteFileController,
-} from "../controllers/files.js"; //Importamos controladores de files.js
+} from "./controllers/files.js"; //Importamos controladores de files.js
 
 import {
   getFoldersController,
   newFolderController,
   getSingleFolderController,
   deleteFolderController,
-} from "../controllers/folders.js"; //Importamos controladores de folders.js
+} from "./controllers/folders.js"; //Importamos controladores de folders.js
 
-import { authorizationUser } from "../middlewares/authorization.js"; //Importamos middleware encargado de comprobar peticiones hechas por usuarios registrados
+import { authorizationUser } from "./middlewares/authorization.js"; //Importamos middleware encargado de comprobar peticiones hechas por usuarios registrados
 
 dotenv.config();
 
