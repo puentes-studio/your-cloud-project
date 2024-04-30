@@ -1,11 +1,9 @@
-Portable Hard Disk - Your Cloud
+Your Cloud
 
-Este código pertenece al FRONT de un Disco Duro Online con un funcionamiento similar al de cualquier APP de almacenamiento y gestión de archivos en la nube.
+This code belongs to the front end of an Online Hard Disk with functionality similar to any cloud storage and file management app.
 
-Para iniciar el funcionamiento de la APP se debe abrir la consola e inicializar con: "npm run dev".
+To start the app, open the console and initialize it with: "npm run dev".
 
-Por supuesto, estableciendo previamente la comunicación con el back-end de dicho proyecto, se encuentra en la carpeta server con sus instrucciones.
+Of course, prior communication with the backend of the project is required, which is located in the server folder along with its instructions.
 
-Una vez inicializada la app, su funcionamiento es bastante intuitivo.
-
-Permite el registro de usuario, crear cuenta, hacer login y la subida y borrado de archivos, además de la creación de carpetas para su administracion.
+Once the app is initialized, its operation is quite intuitive.
