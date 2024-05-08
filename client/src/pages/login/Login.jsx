@@ -1,33 +1,20 @@
-import { Link, useNavigate } from "react-router-dom";
-import { useContext, useState } from "react";
-import { loginUserService } from "../../services";
-import Header from "../../components/header/Header";
-import { AutenticacionContext } from "../../context/AutenticationContext";
-import "./Login.css";
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { useAuth } from '../../context/sign-in.context';
+import Header from '../../components/header/Header';
+import './Login.css';
 
 const Login = () => {
-  const navigate = useNavigate();
+  const { handleLogin } = useAuth();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  const { setToken, setUser } = useContext(AutenticacionContext);
-
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
   const handleForm = async (e) => {
     e.preventDefault();
-    setError("");
+    setError('');
     try {
-      const data = await loginUserService({ email, password });
-
-      console.log(data);
-
-      setToken(data.token);
-      setUser(data.user_name);
-      {
-        /*Darle una vuelta a esto */
-      }
-
-      navigate("/user-content");
+      handleLogin(email, password);
     } catch (error) {
       setError(error.message);
     }
@@ -75,16 +62,14 @@ const Login = () => {
           <Link
             className="build-team"
             to="https://www.linkedin.com/in/ramon-paez-8b63821a2/"
-            target="_blank"
-          >
+            target="_blank">
             Ramon Paez
           </Link>
           &nbsp;
           <Link
             className="build-team"
             to="https://www.linkedin.com/in/vlad-puentesb/"
-            target="_blank"
-          >
+            target="_blank">
             Vlad Beltran
           </Link>
         </p>

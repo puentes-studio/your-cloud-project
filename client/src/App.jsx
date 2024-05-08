@@ -7,6 +7,7 @@ import RecoverPassword from './pages/login/RecoverPassword'
 import UserContent from './pages/userContent/UserContent'
 import NotFound from './pages/notFound/NotFound'
 import CreateFolder from './pages/createFolder/CreateFolder'
+import { AuthProvider } from '../src/context/sign-in.context';
 import './App.css'
 
 
@@ -18,20 +19,20 @@ function App() {
 
   return (
     <>
-     
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/recoverpassword" element={<RecoverPassword />} />
-        <Route path="/user-content" element={<UserContent />} />
-        <Route path="/create-folder" element={<CreateFolder />} />
-        <Route path="/search" element='' />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/recoverpassword" element={<RecoverPassword />} />
+          <Route path="/user-content" element={<UserContent />} />
+          <Route path="/create-folder" element={<CreateFolder />} />
+          <Route path="/search" element="" />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </AuthProvider>
     </>
-  )
+  );
 }
 
 export default App
